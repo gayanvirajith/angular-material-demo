@@ -10,9 +10,9 @@ Sample seed app using angular material.
     ```
     cd angular-material-demo
     ```
-4. Install dependencies
+4. Install dependencies (You might require `sudo`)
     ```
-    npm install (You might require `sudo`)
+    npm install
     ```
 5. Install bower dependencies
     ```
