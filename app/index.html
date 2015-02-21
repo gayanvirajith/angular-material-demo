@@ -54,20 +54,19 @@
             </button>
             <div layout="row" flex class="fill-height">
                 <div class="md-toolbar-item md-breadcrumb">
-                    <span>
-                      <span hide-sm hide-md class="ng-binding">Demos</span>
-                      <span class="docs-menu-separator-icon" hide-sm hide-md>
-                        <img src="/images/icons/docArrow.png" alt=""
-                             aria-hidden="true">
-                      </span>
-                    </span>
-                    <span class="md-breadcrumb-page ng-binding">Getting Started</span>
+                    <span ng-if="menu.currentPage.name !== menu.currentSection.name">
+              <span hide-sm hide-md>{{menu.currentSection.name}}</span>
+              <span class="docs-menu-separator-icon" style="" hide-sm hide-md>
+                <img src="images/icons/docArrow.png" alt="" aria-hidden="true">
+              </span>
+            </span>
+                    <span class="md-breadcrumb-page">{{(menu.currentPage | humanizeDoc) || 'Angular Material' }}</span>
                 </div>
             </div>
         </div>
     </md-toolbar>
     <md-content ng-view="" md-scroll-y="" flex=""
-                class="md-padding ng-scope md-default-theme reveal-animation">
+                class="ng-scope md-default-theme reveal-animation">
 
     </md-content>
 </div>

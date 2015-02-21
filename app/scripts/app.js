@@ -81,20 +81,20 @@ app.directive('menuToggle', function() {
 app.factory('menu', ['$location', '$rootScope', function($location, $rootScope){
 
     var sections = [{
-        name: 'Getting Started',
+        name: 'Home',
         url: '/',
         type: 'link'
     }];
 
     var demoDocs = [
         {
-            name: 'Demo 1',
+            name: 'About',
             url: '/about'
         }
     ];
 
     sections.push({
-        name: 'Demos',
+        name: 'Pages',
         pages: demoDocs.sort(sortByName),
         type: 'toggle'
     });
@@ -171,3 +171,16 @@ app.factory('menu', ['$location', '$rootScope', function($location, $rootScope){
         });
     }
 }]);
+
+
+app.filter('humanizeDoc', function() {
+    return function(doc) {
+        if (!doc) return;
+        if (doc.type === 'directive') {
+            return doc.name.replace(/([A-Z])/g, function($1) {
+                return '-'+$1.toLowerCase();
+            });
+        }
+        return doc.label || doc.name;
+    };
+})
