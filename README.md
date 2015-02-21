@@ -10,16 +10,16 @@ Sample seed app using angular material.
     ```
     cd angular-material-demo
     ```
-3. Install dependencies
+4. Install dependencies
     ```
     npm install (You might require `sudo`)
     ```
-4. Install bower dependencies
+5. Install bower dependencies
     ```
     bower install
     ```
-5. Run grunt server
+6. Run grunt server
     ```
     grunt serve
     ```
-8. Open <http://localhost:8000> & enjoy
+7. Open <http://localhost:8000> & enjoy
