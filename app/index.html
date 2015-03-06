@@ -13,6 +13,8 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
@@ -24,7 +26,7 @@
 
 
 <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
-            md-is-locked-open="$media('gt-sm')">
+            md-is-locked-open="$media('gt-md')">
     <md-toolbar class="md-default-theme">
         <h1 class="md-toolbar-tools">
             <a ng-href="/" layout="row" flex="" href="/">
@@ -113,6 +115,7 @@
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

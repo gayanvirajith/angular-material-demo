@@ -10,8 +10,15 @@
 angular.module('angMaterialApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+      $scope.patient = {
+        strokeId: '',
+        bhtNo: null,
+        hospital: '',
+        name: '',
+        age: null,
+        dob: '',
+        nic: '',
+        pregnant: false
+      }
     ];
   });

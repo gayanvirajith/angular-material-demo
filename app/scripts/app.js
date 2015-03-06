@@ -13,14 +13,15 @@ var app = angular
         'ngAnimate',
         'ngAria',
         'ngRoute',
-        'ngMaterial'
+        'ngMaterial',
+        'ngMessages'
     ]);
 
-app.config(function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-        .primaryPalette('pink')
-        .accentPalette('orange');
-});
+//app.config(function($mdThemingProvider) {
+//    $mdThemingProvider.theme('default')
+//        .primaryPalette('pink')
+//        .accentPalette('orange');
+//});
 
 app.config(function ($routeProvider) {
     $routeProvider
